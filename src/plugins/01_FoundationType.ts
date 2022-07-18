@@ -25,3 +25,5 @@ function sum(a:number,b:number):number{
 }
 sum(123,456)
 /* sum(123,456,789) */ //789会报错，根据方法定义的个数进行匹配
+
+export {}
