@@ -1,5 +1,4 @@
 {
-
     /* 
     tsconfig,json是ts编译器的配置文件，ts编译器可以根据它的信息来对代码进行编译
     “include" 用来指定哪些ts文件需要被编辑
@@ -8,5 +7,44 @@
     “exclude” 不需要被便衣的文件目录
       默认值:["node_modules","bower_components","jspm_packages"]
     */
+    "include": [
+        "src/"
+    ],
+    /* compilerOptions 编译器的选择
+     */
+    "compilerOptions": {
+        //target 用来指定ts被编译为ES的版本
+        "target": "ES6",
+        //module 指定要使用的模块化的规范
+        "module": "es2015",
+        //lib用来指定项目中要使用的库
+        "lib": [
+            "ES6","DOM"
+        ],
+        //outDir 用来指定编辑后文件所在的目录
+        "outDir": "./dist",
+        // 将代码合并为一个文件 设置后所有的全局作用域的代码会合并到同一个文件中
+        /*         "outFile": "./dist/app/.js", */
+        
+        // 是否对js文件进行编译，默认值均为fase
+        "allowJs": true,
+        // 是否检查js代码是否符合语法规划
+        "checkJs": false,
+        //是否移除注释
+        "removeComments": true,
+        //不生成编译后的文件
+        "noEmit": false,
+        //当有错误时不生成编译后的文件
+        "noEmitOnError": true,
 
+        //严格模式的总开关
+        "strict": true,
+
+        //用来设置编译后的文件是否使用严格模式
+        "alwaysStrict": true,
+        // 不允许隐式的any类型
+        "noImplicitAny": true,
+        //严格检查空值
+        "strictNullChecks": true,
+    },
 }
