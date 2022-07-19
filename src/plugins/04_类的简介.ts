@@ -39,3 +39,5 @@ console.log(per.name)
 console.log(Person.age)
 /* per.name="tom" */ //会报错
 per.sayHello()
+
+export{}
