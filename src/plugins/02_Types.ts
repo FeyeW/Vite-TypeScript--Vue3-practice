@@ -42,7 +42,7 @@ s=<string>e
 
 //void 用来吧表示空，以函数为例，就表示没有返回值的函数
 function fn():void{
-    return null
+
 }
 
 //never 表示永远不会反悔结果
